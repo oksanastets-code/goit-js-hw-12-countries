@@ -36,7 +36,7 @@ input {
   margin: 30px auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 .country-name {
   margin-bottom: 30px;
@@ -44,6 +44,8 @@ input {
 }
 .country-data-body {
   margin-right: auto;
+  margin-bottom: 15px;
+  padding: 0;
   text-align: left;
 }
 .country-name-list {
@@ -53,7 +55,22 @@ input {
   cursor: pointer;
 }
 .country-data-item {
+  margin-top: 0;
+  margin-bottom: 30px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+}
+.languages {
+  flex-direction: column;
+  // justify-content: space-around;
+}
+.languages > ul {
+  list-style: none;
+}
+.language {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.value {
 }

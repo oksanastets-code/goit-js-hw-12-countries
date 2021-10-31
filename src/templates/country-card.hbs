@@ -5,21 +5,21 @@
         <ul class="country-data-list">
             <li class="country-data-item">
                 <h3>Capital:</h3>
-                <span>{{ 0.capital }}</span>
+                <span class="value">{{ 0.capital }}</span>
             </li>
             <li class="country-data-item">
                 <h3>Population:</h3>
-                <span>{{0.population}}</span>
+                <span class="value">{{0.population}}</span>
             </li>
-            <li class="country-data-item">
+            <li class="languages country-data-item">
                 <h3>Languages:</h3>
-                <span>
+                {{!-- <span> --}}
                     {{#each 0.languages}}
                     <ul>
                         <li class="language">{{name}}</li>
                     </ul>
                     {{/each}}
-                </span>
+                {{!-- </span> --}}
             </li>
         </ul>
     </div>
