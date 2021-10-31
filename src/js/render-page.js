@@ -23,8 +23,7 @@ function onSearch(event) {
 function renderCountryCard(country) {
   const markup = countryCardTpl(country);
   console.log(markup);
-  console.log(refs.value);
-
+  
   refs.cardContainer.innerHTML = markup;
 }
 
